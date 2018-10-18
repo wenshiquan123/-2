@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:onClick="back">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/actionbar_white_back_icon"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="快递服务"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16" />
+
+        <ImageView
+            android:id="@+id/add_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:onClick="add"
+            android:src="@drawable/tianjia"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <com.hlzx.ljdjsj.view.OverScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.hlzx.ljdjsj.view.NoScrollForListView
+            android:id="@+id/express_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/divide_line_color"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent"></com.hlzx.ljdjsj.view.NoScrollForListView>
+    </com.hlzx.ljdjsj.view.OverScrollView>
+
+</LinearLayout>

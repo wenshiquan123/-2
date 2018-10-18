@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tab_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="back">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fh"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <com.hlzx.ljdjsj.view.ClearEditText
+            android:id="@+id/search_et"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_edit_white_bg"
+            android:drawableLeft="@mipmap/action_search_icon"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:hint="搜索您的商品"
+            android:imeOptions="actionSearch"
+            android:lines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:text=""
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_16" />
+
+        <LinearLayout
+            android:id="@+id/right_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.hlzx.ljdjsj.view.OverScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索历史"
+                    android:textColor="@color/font_grey"
+                    android:textSize="@dimen/text_16" />
+
+                <Button
+                    android:id="@+id/delete_bt"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清除"
+                    android:background="@null"
+                    android:onClick="delete"
+                    android:textColor="@color/font_grey"
+                    android:textSize="@dimen/text_16" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/divide_line_color" />
+
+            <com.hlzx.ljdjsj.view.XCFlowLayout
+                android:id="@+id/flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/text_10"></com.hlzx.ljdjsj.view.XCFlowLayout>
+        </LinearLayout>
+    </com.hlzx.ljdjsj.view.OverScrollView>
+
+</LinearLayout>

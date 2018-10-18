@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_with_back_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单号"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="订单金额"
+            android:maxWidth="80dp"
+            android:minWidth="60dp"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="订单状态"
+            android:maxWidth="80dp"
+            android:minWidth="60dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="更新时间"
+            android:maxWidth="80dp"
+            android:minWidth="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="visible"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line_color"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/order_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxWidth="130dp"
+                android:minWidth="50dp"
+                android:text="1321546163132131"
+                android:textColor="#AAAAAA"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/ctime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxWidth="130dp"
+                android:minWidth="50dp"
+                android:text="2016-01-13 12:55:32"
+                android:textColor="#AAAAAA"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxWidth="80dp"
+            android:minWidth="60dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/total_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_box_round"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="已到账"
+                android:textColor="@color/font_orange"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:maxWidth="80dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="待确认"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/update_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxWidth="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="2015-14-01 12:36:21"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/loading_data"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/no_network"
+        android:visibility="gone" />
+    <include
+        layout="@layout/layout_no_data"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_srl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <ListView
+            android:id="@+id/unconfirm_order_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/divide_line_color"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

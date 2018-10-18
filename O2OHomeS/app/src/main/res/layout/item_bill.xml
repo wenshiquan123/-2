@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/change_type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="订单奖励"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/change_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="2015-12-18 14:05"
+            android:textColor="@color/font_dark_grey"
+            android:textSize="@dimen/text_12" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/balance_change_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="+1.10"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/text2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额"
+            android:layout_alignBottom="@+id/balance_change_tv"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_12"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/balance_after_tv"
+            />
+        <TextView
+            android:id="@+id/balance_after_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="1426.7"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/balance_change_tv"
+            android:textColor="@color/font_black"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/text_12" />
+    </RelativeLayout>
+
+
+</LinearLayout>

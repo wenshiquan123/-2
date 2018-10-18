@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/loading_data"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/no_network"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/layout_no_data"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <GridView
+                android:id="@+id/goods_gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:overScrollMode="never"
+                android:verticalSpacing="5dp"></GridView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/more_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/theme_bg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pb_load_progress"
+                style="@android:style/Widget.ProgressBar.Small.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"></ProgressBar>
+
+            <TextView
+                android:id="@+id/tv_load_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:gravity="center"
+                android:text="加载更多数据"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical" 
+   >
+ 
+     <DatePicker
+         android:id="@+id/dpPicker"
+         android:calendarViewShown="false"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" 
+     />
+ 
+    <TimePicker
+         android:id="@+id/tpPicker"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+      />
+ 
+ <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide_line_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/cancel_ll"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_back"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/divide_line_color" />
+
+        <LinearLayout
+            android:id="@+id/confirm_ll"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_back"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="@color/font_yellow"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

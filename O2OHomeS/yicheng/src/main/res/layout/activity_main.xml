@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        ></FrameLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navbar_h"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/LCTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:checked="true"
+            android:id="@+id/tab_one" />
+        <RadioButton
+            style="@style/LCTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="产品"
+            android:id="@+id/tab_two" />
+        <RadioButton
+            style="@style/LCTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动态"
+            android:id="@+id/tab_three" />
+        <RadioButton
+            style="@style/LCTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:id="@+id/tab_four" />
+    </RadioGroup>
+</LinearLayout>

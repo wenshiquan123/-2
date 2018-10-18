@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+    <include
+        layout="@layout/title_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/main_title1_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_title1_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center_horizontal"
+                    android:src="@mipmap/tab_list" />
+
+                <TextView
+                    android:id="@+id/main_title1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单"
+                    android:textColor="#282828"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/point1_iv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/shape_red_point"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="20dp"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/main_title2_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_title2_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center_horizontal"
+                    android:src="@mipmap/tab_serves" />
+
+                <TextView
+                    android:id="@+id/main_title2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务"
+                    android:textColor="#272727"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/point2_iv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/shape_red_point"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/main_title3_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_title3_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center_horizontal"
+                    android:src="@mipmap/tab_chat" />
+
+                <TextView
+                    android:id="@+id/main_title3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="聊天"
+                    android:textColor="#272727"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/point3_iv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/shape_red_point"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/main_title4_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_title4_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center_horizontal"
+                    android:src="@mipmap/tab_income" />
+
+                <TextView
+                    android:id="@+id/main_title4_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收入"
+                    android:textColor="#282828"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/point4_iv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/shape_red_point"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/main_title5_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_title5_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center_horizontal"
+                    android:src="@mipmap/tab_me" />
+
+                <TextView
+                    android:id="@+id/main_title5_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我"
+                    android:textColor="#282828"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/point5_iv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/shape_red_point"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

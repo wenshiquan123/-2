@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_back"
+            android:gravity="center"
+            android:onClick="back">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fh"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我是标题"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/text_16" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="help"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_help"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.hlzx.ljdjsj.view.OverScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/shopkeeper_recommend_rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_item"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/tools_iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/shop_keeper_recommend" />
+
+                        <TextView
+                            android:id="@+id/tools_name_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="@+id/tools_iv"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/tools_iv"
+                            android:text="掌柜推荐"
+                            android:textColor="@color/font_black"
+                            android:textSize="@dimen/text_16" />
+
+                        <TextView
+                            android:id="@+id/tools_des_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tools_name_iv"
+                            android:layout_below="@+id/tools_name_iv"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/tools_iv"
+                            android:text="自主选择优势商品推荐，增强曝光"
+                            android:textColor="@color/font_grey"
+                            android:textSize="@dimen/text_14"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_line_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/hot_rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_item"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/hot_iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/hot" />
+
+                        <TextView
+                            android:id="@+id/hot_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="@+id/hot_iv"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/hot_iv"
+                            android:text="店铺热卖"
+                            android:textColor="@color/font_black"
+                            android:textSize="@dimen/text_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/hot_name_tv"
+                            android:layout_below="@+id/hot_name_tv"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/hot_name_tv"
+                            android:text="自主选择优势商品热卖，增强曝光"
+                            android:textColor="@color/font_grey"
+                            android:textSize="@dimen/text_14" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_line_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/subsidy_rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_item"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/subsidy_iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/subsidy" />
+
+                        <TextView
+                            android:id="@+id/subsidy_des_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="@+id/subsidy_iv"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/subsidy_iv"
+                            android:text="0.1元特价补贴"
+                            android:textColor="@color/font_black"
+                            android:textSize="@dimen/text_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/subsidy_des_tv"
+                            android:layout_below="@+id/subsidy_des_tv"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/subsidy_iv"
+                            android:text="新注册用户有5次体验机会，每个用户每天只能购买一次，平台补贴1.9元"
+                            android:textColor="@color/font_grey"
+                            android:textSize="@dimen/text_14" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tools_name_iv"
+                    android:layout_below="@+id/tools_name_iv"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tools_iv"
+                    android:text="更多营销工具，敬请期待"
+                    android:textColor="@color/font_grey"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.hlzx.ljdjsj.view.OverScrollView>
+</LinearLayout>

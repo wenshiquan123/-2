@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <ScrollView
+      android:layout_marginTop="5dp"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:padding="5dp"
+      >
+      <com.hlzx.ljdjsj.view.GridViewForScrollView
+          android:id="@+id/serve_gv"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:horizontalSpacing="10dp"
+          android:verticalSpacing="10dp"
+          android:numColumns="2"
+          android:stretchMode="columnWidth"
+          android:gravity="center"
+          >
+      </com.hlzx.ljdjsj.view.GridViewForScrollView>
+
+  </ScrollView>
+
+
+</LinearLayout>

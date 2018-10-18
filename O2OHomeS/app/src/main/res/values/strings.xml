@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">立即到家商家版</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="ranking">%1$s:第%2$d名(恭喜您击败了全国%3$s的商家)</string>
+    <string name="ranking2">%1$s(恭喜您击败了全国%2$s的商家)</string>
+    <string name="recommend">(共%1$d件)添加到推荐商品</string>
+    <string name="hot">(共%1$d件)添加到热卖商品</string>
+    <string name="subsidy">(共%1$d件)添加到特价商品</string>
+</resources>

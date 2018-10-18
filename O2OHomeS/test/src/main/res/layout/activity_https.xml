@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.hlzx.wenutil.ui.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/pull_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.hlzx.wenutil.ui.AdLinearLayout
+                android:id="@+id/ad_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                ></com.hlzx.wenutil.ui.AdLinearLayout>
+
+            <Button
+                android:id="@+id/btn_https_reqeust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="request"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+    </com.hlzx.wenutil.ui.pulltorefresh.PullToRefreshScrollView>
+
+
+</LinearLayout>

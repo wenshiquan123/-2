@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="theme_bg">#EEEEEE</color>
+    <color name="black">#282828</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFD600</color>
+    <color name="title_bg">#FFD600</color>
+    <color name="tr_title_bg">#53FFD600</color>
+    <color name="font_black">#282828</color>
+    <color name="font_light_black">#636363</color>
+    <color name="font_blue">#51C061</color>
+    <color name="font_yellow">#FFD600</color>
+    <color name="font_light_blue">#64B9EA</color>
+    <color name="font_light_green">#53B785</color>
+    <color name="font_red">#C11111</color>
+    <color name="font_grey">#858585</color>
+    <color name="font_dark_grey">#636363</color>
+    <color name="font_orange">#FE774A</color>
+
+
+    <color name="divide_line_color">#D3D3D3</color>
+    <color name="orange">#FE774A</color>
+
+    <color name="province_line_border">#77C5DF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- viewpageindicator-->
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+
+    <!-- 扫描用的-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>

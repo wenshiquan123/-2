@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>零食食品</item>
+        <item>饮料类</item>
+        <item>冲饮类</item>
+        <item>牛奶酸奶</item>
+        <item>零食食品</item>
+        <item>饮料类</item>
+        <item>冲饮类</item>
+        <item>牛奶酸奶</item>
+        <item>零食食品</item>
+        <item>饮料类</item>
+        <item>冲饮类</item>
+        <item>牛奶酸奶</item>
+    </string-array>
+</resources>

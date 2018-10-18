@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/loading_data"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/no_network"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/layout_no_data"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_srl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/goods_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:overScrollMode="never"
+            android:listSelector="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:dividerHeight="0.5dp"
+            android:divider="@color/divide_line_color"
+            ></ListView>
+
+        <LinearLayout
+            android:id="@+id/more_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_bg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:visibility="gone"
+            ></LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

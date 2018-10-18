@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_with_back_bar" />
+
+    <com.hlzx.ljdjsj.view.OverScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择常用拒单理由"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/text_16" />
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/reason1_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_reason"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="超出配送范围"
+                        android:textColor="@color/font_dark_grey"
+                        android:textSize="@dimen/text_16" />
+
+                    <RadioButton
+                        android:id="@+id/reason2_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignStart="@+id/reason4_rb"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_reason"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text="缺货"
+                        android:textColor="@color/font_dark_grey"
+                        android:textSize="@dimen/text_16" />
+
+
+                    <RadioButton
+                        android:id="@+id/reason3_rb"
+                        android:layout_below="@id/reason1_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_reason"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="订单金额太少"
+                        android:textColor="@color/font_dark_grey"
+                        android:textSize="@dimen/text_16" />
+
+                    <RadioButton
+                        android:id="@+id/reason4_rb"
+                        android:layout_below="@id/reason2_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_reason"
+                        android:layout_alignParentRight="true"
+
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="其他理由"
+                        android:textColor="@color/font_dark_grey"
+                        android:textSize="@dimen/text_16" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_box_grey"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/refuse_reason_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="填写拒绝理由"
+                    android:lines="10"
+                    android:textColor="@color/font_dark_grey"
+                    android:textSize="@dimen/text_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/response_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/text_14"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Button
+                    android:id="@+id/commit_bt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_yellow_btn"
+                    android:onClick="commit"
+                    android:padding="10dp"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.hlzx.ljdjsj.view.OverScrollView>
+</LinearLayout>

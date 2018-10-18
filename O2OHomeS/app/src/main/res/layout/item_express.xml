@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="快递单号:"
+                    android:textColor="@color/font_dark_grey"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/order_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="AEM231256489485651"
+                    android:textStyle="bold"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="联系电话:"
+                    android:textColor="@color/font_dark_grey"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="15994863925"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="收货时间:"
+                    android:textColor="@color/font_dark_grey"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2015-12-11 17:22"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="送达时间:"
+                    android:textColor="@color/font_dark_grey"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="---"
+                    android:textColor="@color/font_orange"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            >
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="确认送达"
+                android:background="@drawable/shape_box_round"
+                android:padding="0dp"
+                android:textColor="@color/font_orange"
+                android:textSize="@dimen/text_14"
+                />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="联系用户"
+                android:background="@drawable/shape_box_round_blue"
+                android:padding="0dp"
+                android:textColor="@color/font_light_blue"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_14"
+                />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="删除"
+                android:background="@drawable/shape_box_round"
+                android:padding="0dp"
+                android:textColor="@color/font_orange"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_14"
+                />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="已送达"
+                android:background="@drawable/shape_box_round_grey"
+                android:padding="0dp"
+                android:textColor="@color/font_grey"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_14"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
